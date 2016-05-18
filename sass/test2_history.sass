@@ -1,0 +1,310 @@
+$slider1 : "../img/Diapo/bg.png"
+$grey_banner : "../img/BG/grey_banner.png"
+$footer_banner : "../img/BG/footer_bg.png"
+$footer_orange : "../img/BG/footer_orange.png"
+$body_mask : "../img/BG/body_mask.png"
+$corner : "../img/Diapo/border2.png"
+$bloc_img : "../img/Blocs/Actu/bloc1_img.png"
+$degrade : "../img/Blocs/Actu/degrade.png"
+$dropdown: "../img/BG/dropdown.png"
+$shadow: "../img/Footer/logos_shadow.png"
+
+$orange : #F38230
+$grey : #606060
+$bloc_width : image-width($bloc_img) / 2 + 200px
+
+$break-small: 900px
+$break-large: 1400px
+
+@mixin respond-to($media) 
+	@if $media == handhelds 
+		@media all and (max-width: $break-small)
+			@content 
+	@else if $media == medium-screens 
+		@media all and (min-width: $break-small + 1) and (max-width: $break-large - 1)
+			@content
+	@else if $media == wide-screens 
+		@media all and (min-width: $break-large) 
+			@content
+
+/* For jQuery Toggles */
+.clear
+	clear : both
+
+.orange
+	color : $orange
+
+.show
+	display : inline
+.bx-viewport
+	height : 371px !important
+	padding : 0 !important
+	margin : 0 !important
+	background: transparent !important
+	border :  none !important
+	box-shadow : none !important
+	top : -10% !important
+
+.bx-wrapper
+	margin : 0px -10px 0px 5px !important
+.bx-pager , .bx-default-pager
+	position : absolute !important
+	padding : 0 !important
+	bottom : 10% !important
+/* ****************** */
+
+body 
+	margin : auto
+	background  : white
+	height : 100%
+	+respond-to(wide-screens)
+		margin : auto
+	background : #EAEAEA
+#container
+	background : #EAEAEA
+	
+	header
+		background-color : white
+		height : 115px 
+		width : 100%
+		+respond-to(medium-screens)
+			width : 100%
+		+respond-to(handhelds)
+			width : 100%
+			background : orange
+		margin : auto
+		.logo
+			position : absolute
+			margin-left : 21%
+			float : left
+			z-index : 10	
+			+respond-to(handhelds)
+				display	: none
+		.membre-recherche
+			float: right
+			margin-right : 20%
+			margin-top : 2%
+			+respond-to(medium-screens)
+				margin-right : 20%
+			+respond-to(handhelds)
+				display	: none
+			div 
+				float : left
+				display : table
+				&:first-of-type
+					color : grey
+					text-transform : uppercase
+			.form-control
+				background : url('../img/Header/recherche.png')
+				
+				height : 30px
+				&:focus
+					border-color: $orange
+					box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.3)
+					
+		nav
+			
+			float : right
+			margin-right : 19%
+			width : 40%
+			+respond-to(handhelds) 
+				display : none
+			
+			li
+				width : 12.5%
+				a
+					
+					margin : 2px !important
+					padding : 0 !important
+					color : grey
+					&:hover
+						background : none !important
+						color : $orange !important
+						&:after
+							color : grey
+							background : transparent !important
+							border-radius : none !important
+							
+			.dropdown-menu
+				background : url($dropdown) no-repeat
+					size : cover
+				width : 200px
+				height : 170px
+				border : none
+				box-shadow : none
+					
+				li
+					
+					margin-left : 10% !important
+					margin-right : 10% !important
+					padding : 4px !important
+					width : 85%
+					&:hover
+						background : $orange
+						color : white
+						border-radius : 4px
+
+	#presentation
+		
+		.bxslider
+			li
+				background-size : cover
+				top : 0
+				left : 0
+				height : 371px
+				width : 60%
+				&:first-of-type
+					background : url('../img/Diapo/slider1-2.png') no-repeat
+						size : cover
+				&:nth-of-type(2)	
+					background : url('../img/Diapo/slider2.png') no-repeat
+						size : cover	
+				&:nth-of-type(3)	
+					background : url('../img/Diapo/slider3.png') no-repeat
+						size : cover
+					width : 100%
+				&:nth-of-type(4)	
+					background : url('../img/Diapo/slider4.png') no-repeat
+						size : cover
+					width : 100%
+				.caption 
+					width : 400px
+					height: 120px
+					border: 15px solid orange
+					border-image: url($corner) 34% repeat
+					margin-left : 21%
+					margin-top : 100px
+					span
+						color : white
+						font-weight : bold
+						padding : 3px
+						line-height : 1.8
+						&:nth-of-type(1)
+							background : $orange
+							margin-left : 3em
+						&:nth-of-type(2)
+							background : rgba(0,0,0,0.7)
+						&:nth-of-type(3)
+							color : black !important
+							background : rgba(220,220,220,0.6)
+							margin-left : 5em
+			
+		.depuis
+			background : url($grey_banner), url('../img/Logo-slider/button&shadow.png')
+				position : center bottom , left bottom
+				repeat : no-repeat , no-repeat !important
+				size : cover
+			
+			
+			
+			text-align : center
+			color : white
+			height : 190px
+			overflow : hidden
+			margin-top : 0
+			p
+				margin-left : -5%
+				
+				
+		img[alt="button&shadow"]
+			height : 40px
+			width : 100%
+			position : absolute	
+			left : 1.5%
+		.clients
+			background : white	
+			height : 120px
+			
+			#lightSlider
+				margin-top : 35px
+			#logo-clients
+				
+				margin-left : 18%
+				width : 70%
+				height : 80px
+			
+				.carousel-inner
+					.item
+						height: 90px
+						img 
+							position: absolute
+							top: 0
+							left: 0
+							min-height: 90px
+				
+
+	#activities
+		width : 100%
+		+respond-to(wide-screens)
+			width : 100%
+			margin : auto
+		background : url($body_mask)
+			size : cover
+		height : 700px
+		.my_row
+			padding-top : 5%
+			margin-left : 20%
+			margin-right : 20%
+			position : relative
+			div
+				width : $bloc_width
+				img:first-of-type
+					position : absolute
+					width : $bloc_width
+					height : 200px !important
+					&[alt="arrow"]
+						position : absolute
+						width : 30px
+						height : 30px
+						left : -7%
+						top : 35%
+				.first_bloc
+					position : absolute
+					color : white
+					font-weight : bold
+					background : url($degrade)
+					top : 200px - (image-height($degrade)/2)
+					width : 100%
+				.second_bloc
+					position : absolute
+					top : 200px + (image-height($degrade)) - 20px
+					float : left
+					background : white
+					margin-top : -5%
+					width : 100%
+					box-shadow: 0 4px 2px -2px gray
+					height : 350px
+				span:hover ~ img[alt="arrow"]
+					width : 100px
+				p
+					margin-top : 10px
+					padding : 10px
+
+			
+		
+	footer
+		+respond-to(wide-screens)
+			width : 100%
+			margin : auto
+		background : url($footer_banner)
+			size : cover
+		height : 400px
+		.site-map
+			position : absolute
+			margin-left : 20%
+			color : white
+			ul
+				list-style-type : none
+				float : left
+				margin-top : 8%
+			.grey_line
+				position : absolute
+				margin-top : 13%
+				width : 30%
+				margin-left : -60% !important
+		.lnet
+			background : #818181 !important
+			margin-top : image-height($footer_banner) / 1.5 + 10px
+			height : 20px
+			text-align : center
+			color : white

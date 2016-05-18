@@ -1,0 +1,402 @@
+/* For jQuery Toggles */
+/* line 31, ../sass/test2_history.sass */
+.clear {
+  clear: both;
+}
+
+/* line 34, ../sass/test2_history.sass */
+.orange {
+  color: #F38230;
+}
+
+/* line 37, ../sass/test2_history.sass */
+.show {
+  display: inline;
+}
+
+/* line 39, ../sass/test2_history.sass */
+.bx-viewport {
+  height: 371px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  top: -10% !important;
+}
+
+/* line 48, ../sass/test2_history.sass */
+.bx-wrapper {
+  margin: 0px -10px 0px 5px !important;
+}
+
+/* line 50, ../sass/test2_history.sass */
+.bx-pager, .bx-default-pager {
+  position: absolute !important;
+  padding: 0 !important;
+  bottom: 10% !important;
+}
+
+/* ****************** */
+/* line 56, ../sass/test2_history.sass */
+body {
+  margin: auto;
+  background: white;
+  height: 100%;
+  background: #EAEAEA;
+}
+@media all and (min-width: 1400px) {
+  /* line 56, ../sass/test2_history.sass */
+  body {
+    margin: auto;
+  }
+}
+
+/* line 63, ../sass/test2_history.sass */
+#container {
+  background: #EAEAEA;
+}
+/* line 66, ../sass/test2_history.sass */
+#container header {
+  background-color: white;
+  height: 115px;
+  width: 100%;
+  margin: auto;
+}
+@media all and (min-width: 901px) and (max-width: 1399px) {
+  /* line 66, ../sass/test2_history.sass */
+  #container header {
+    width: 100%;
+  }
+}
+@media all and (max-width: 900px) {
+  /* line 66, ../sass/test2_history.sass */
+  #container header {
+    width: 100%;
+    background: orange;
+  }
+}
+/* line 76, ../sass/test2_history.sass */
+#container header .logo {
+  position: absolute;
+  margin-left: 21%;
+  float: left;
+  z-index: 10;
+}
+@media all and (max-width: 900px) {
+  /* line 76, ../sass/test2_history.sass */
+  #container header .logo {
+    display: none;
+  }
+}
+/* line 83, ../sass/test2_history.sass */
+#container header .membre-recherche {
+  float: right;
+  margin-right: 20%;
+  margin-top: 2%;
+}
+@media all and (min-width: 901px) and (max-width: 1399px) {
+  /* line 83, ../sass/test2_history.sass */
+  #container header .membre-recherche {
+    margin-right: 20%;
+  }
+}
+@media all and (max-width: 900px) {
+  /* line 83, ../sass/test2_history.sass */
+  #container header .membre-recherche {
+    display: none;
+  }
+}
+/* line 91, ../sass/test2_history.sass */
+#container header .membre-recherche div {
+  float: left;
+  display: table;
+}
+/* line 94, ../sass/test2_history.sass */
+#container header .membre-recherche div:first-of-type {
+  color: grey;
+  text-transform: uppercase;
+}
+/* line 97, ../sass/test2_history.sass */
+#container header .membre-recherche .form-control {
+  background: url("../img/Header/recherche.png");
+  height: 30px;
+}
+/* line 101, ../sass/test2_history.sass */
+#container header .membre-recherche .form-control:focus {
+  border-color: #F38230;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.3);
+}
+/* line 105, ../sass/test2_history.sass */
+#container header nav {
+  float: right;
+  margin-right: 19%;
+  width: 40%;
+}
+@media all and (max-width: 900px) {
+  /* line 105, ../sass/test2_history.sass */
+  #container header nav {
+    display: none;
+  }
+}
+/* line 113, ../sass/test2_history.sass */
+#container header nav li {
+  width: 12.5%;
+}
+/* line 115, ../sass/test2_history.sass */
+#container header nav li a {
+  margin: 2px !important;
+  padding: 0 !important;
+  color: grey;
+}
+/* line 120, ../sass/test2_history.sass */
+#container header nav li a:hover {
+  background: none !important;
+  color: #F38230 !important;
+}
+/* line 123, ../sass/test2_history.sass */
+#container header nav li a:hover:after {
+  color: grey;
+  background: transparent !important;
+  border-radius: none !important;
+}
+/* line 128, ../sass/test2_history.sass */
+#container header nav .dropdown-menu {
+  background: url("../img/BG/dropdown.png") no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 170px;
+  border: none;
+  box-shadow: none;
+}
+/* line 136, ../sass/test2_history.sass */
+#container header nav .dropdown-menu li {
+  margin-left: 10% !important;
+  margin-right: 10% !important;
+  padding: 4px !important;
+  width: 85%;
+}
+/* line 142, ../sass/test2_history.sass */
+#container header nav .dropdown-menu li:hover {
+  background: #F38230;
+  color: white;
+  border-radius: 4px;
+}
+/* line 150, ../sass/test2_history.sass */
+#container #presentation .bxslider li {
+  background-size: cover;
+  top: 0;
+  left: 0;
+  height: 371px;
+  width: 60%;
+}
+/* line 156, ../sass/test2_history.sass */
+#container #presentation .bxslider li:first-of-type {
+  background: url("../img/Diapo/slider1-2.png") no-repeat;
+  background-size: cover;
+}
+/* line 159, ../sass/test2_history.sass */
+#container #presentation .bxslider li:nth-of-type(2) {
+  background: url("../img/Diapo/slider2.png") no-repeat;
+  background-size: cover;
+}
+/* line 162, ../sass/test2_history.sass */
+#container #presentation .bxslider li:nth-of-type(3) {
+  background: url("../img/Diapo/slider3.png") no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+/* line 166, ../sass/test2_history.sass */
+#container #presentation .bxslider li:nth-of-type(4) {
+  background: url("../img/Diapo/slider4.png") no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+/* line 170, ../sass/test2_history.sass */
+#container #presentation .bxslider li .caption {
+  width: 400px;
+  height: 120px;
+  border: 15px solid orange;
+  border-image: url("../img/Diapo/border2.png") 34% repeat;
+  margin-left: 21%;
+  margin-top: 100px;
+}
+/* line 177, ../sass/test2_history.sass */
+#container #presentation .bxslider li .caption span {
+  color: white;
+  font-weight: bold;
+  padding: 3px;
+  line-height: 1.8;
+}
+/* line 182, ../sass/test2_history.sass */
+#container #presentation .bxslider li .caption span:nth-of-type(1) {
+  background: #F38230;
+  margin-left: 3em;
+}
+/* line 185, ../sass/test2_history.sass */
+#container #presentation .bxslider li .caption span:nth-of-type(2) {
+  background: rgba(0, 0, 0, 0.7);
+}
+/* line 187, ../sass/test2_history.sass */
+#container #presentation .bxslider li .caption span:nth-of-type(3) {
+  color: black !important;
+  background: rgba(220, 220, 220, 0.6);
+  margin-left: 5em;
+}
+/* line 192, ../sass/test2_history.sass */
+#container #presentation .depuis {
+  background: url("../img/BG/grey_banner.png"), url("../img/Logo-slider/button&shadow.png");
+  background-position: center bottom, left bottom;
+  background-repeat: no-repeat, no-repeat !important;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  height: 190px;
+  overflow: hidden;
+  margin-top: 0;
+}
+/* line 205, ../sass/test2_history.sass */
+#container #presentation .depuis p {
+  margin-left: -5%;
+}
+/* line 209, ../sass/test2_history.sass */
+#container #presentation img[alt="button&shadow"] {
+  height: 40px;
+  width: 100%;
+  position: absolute;
+  left: 1.5%;
+}
+/* line 214, ../sass/test2_history.sass */
+#container #presentation .clients {
+  background: white;
+  height: 120px;
+}
+/* line 218, ../sass/test2_history.sass */
+#container #presentation .clients #lightSlider {
+  margin-top: 35px;
+}
+/* line 220, ../sass/test2_history.sass */
+#container #presentation .clients #logo-clients {
+  margin-left: 18%;
+  width: 70%;
+  height: 80px;
+}
+/* line 227, ../sass/test2_history.sass */
+#container #presentation .clients #logo-clients .carousel-inner .item {
+  height: 90px;
+}
+/* line 229, ../sass/test2_history.sass */
+#container #presentation .clients #logo-clients .carousel-inner .item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 90px;
+}
+/* line 236, ../sass/test2_history.sass */
+#container #activities {
+  width: 100%;
+  background: url("../img/BG/body_mask.png");
+  background-size: cover;
+  height: 700px;
+}
+@media all and (min-width: 1400px) {
+  /* line 236, ../sass/test2_history.sass */
+  #container #activities {
+    width: 100%;
+    margin: auto;
+  }
+}
+/* line 244, ../sass/test2_history.sass */
+#container #activities .my_row {
+  padding-top: 5%;
+  margin-left: 20%;
+  margin-right: 20%;
+  position: relative;
+}
+/* line 249, ../sass/test2_history.sass */
+#container #activities .my_row div {
+  width: 352.5px;
+}
+/* line 251, ../sass/test2_history.sass */
+#container #activities .my_row div img:first-of-type {
+  position: absolute;
+  width: 352.5px;
+  height: 200px !important;
+}
+/* line 255, ../sass/test2_history.sass */
+#container #activities .my_row div img:first-of-type[alt="arrow"] {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: -7%;
+  top: 35%;
+}
+/* line 261, ../sass/test2_history.sass */
+#container #activities .my_row div .first_bloc {
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  background: url("../img/Blocs/Actu/degrade.png");
+  top: 181px;
+  width: 100%;
+}
+/* line 268, ../sass/test2_history.sass */
+#container #activities .my_row div .second_bloc {
+  position: absolute;
+  top: 218px;
+  float: left;
+  background: white;
+  margin-top: -5%;
+  width: 100%;
+  box-shadow: 0 4px 2px -2px gray;
+  height: 350px;
+}
+/* line 277, ../sass/test2_history.sass */
+#container #activities .my_row div span:hover ~ img[alt="arrow"] {
+  width: 100px;
+}
+/* line 279, ../sass/test2_history.sass */
+#container #activities .my_row div p {
+  margin-top: 10px;
+  padding: 10px;
+}
+/* line 285, ../sass/test2_history.sass */
+#container footer {
+  background: url("../img/BG/footer_bg.png");
+  background-size: cover;
+  height: 400px;
+}
+@media all and (min-width: 1400px) {
+  /* line 285, ../sass/test2_history.sass */
+  #container footer {
+    width: 100%;
+    margin: auto;
+  }
+}
+/* line 292, ../sass/test2_history.sass */
+#container footer .site-map {
+  position: absolute;
+  margin-left: 20%;
+  color: white;
+}
+/* line 296, ../sass/test2_history.sass */
+#container footer .site-map ul {
+  list-style-type: none;
+  float: left;
+  margin-top: 8%;
+}
+/* line 300, ../sass/test2_history.sass */
+#container footer .site-map .grey_line {
+  position: absolute;
+  margin-top: 13%;
+  width: 30%;
+  margin-left: -60% !important;
+}
+/* line 305, ../sass/test2_history.sass */
+#container footer .lnet {
+  background: #818181 !important;
+  margin-top: 276.66667px;
+  height: 20px;
+  text-align: center;
+  color: white;
+}
